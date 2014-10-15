@@ -1,8 +1,9 @@
 AIQ & Backbone TODO Application
 -------------------------------
 > Simple HTML5 mobile TODO Application to showcase Backbone to the AIQ platform integration. 
->> The "todo" folder contains a vanilla version of a ToDo app without AIQ integration.
->> The "todo+aiq" folder contains the same app with additional integration to AIQ datasynchronization which synchronizes the data automatically between devices.
+
+>* The "todo" folder contains a vanilla version of a ToDo app without AIQ integration.
+>* The "todo+aiq" folder contains the same app with additional integration to AIQ datasynchronization which synchronizes the data automatically between devices.
 
 
 
