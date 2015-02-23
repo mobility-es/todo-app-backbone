@@ -31,7 +31,7 @@ define([
             // Ignore empty todos
             if (val) {
                 // Send request to the platform and wait for the response
-                todos.create({title: val}, {wait: true});
+                todos.create({title: val, createAt: Date.now()}, {wait: true});
                 // Reset input field
                 this.$input.val('');
             }

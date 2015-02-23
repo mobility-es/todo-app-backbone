@@ -10,7 +10,7 @@ define([
     var TodoCollection = DataSyncCollection.extend({
         // Save all of the todo items under the `"todo.model.TODO"` document type
         type: 'todo.model.TODO',
-        
+
         // Reference to this collection's model
         model: TODO,
 
@@ -26,7 +26,9 @@ define([
 
         deleteCompleted: function () {
             _.invoke(this.completed(), 'destroy', {wait: true});
-        }
+        },
+
+        comparator: 'createdAt'
     });
 
     return new TodoCollection();

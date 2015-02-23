@@ -25,7 +25,9 @@ define([
 
         deleteCompleted: function () {
             _.invoke(this.completed(), 'destroy', {wait: true});
-        }
+        },
+
+        comparator: 'createdAt'
     });
 
     return new TodoCollection();
